@@ -61,7 +61,7 @@ run_analysis <- function() {
         data_full_means <- dcast(data_full_melt, subject + activity ~ variable, mean)
 
         # write tidy data set into txt file
-        write.table(data_full_means, "tidy.txt")
+        write.table(data_full_means, "tidy.txt", row.names = FALSE)
 }
 
 
